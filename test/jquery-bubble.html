@@ -1,0 +1,25 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery-bubble Test Suite</title>
+    <!-- Load local jQuery. -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- Load local QUnit. -->
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen">
+    <script src="../bower_components/qunit/qunit/qunit.js"></script>
+    <!-- Load local lib and tests. -->
+    <link rel="stylesheet" href="../dist/jquery-bubble.css" media="screen">
+    <script src="../dist/jquery-bubble.js"></script>
+    <script src="jquery-bubble_test.js"></script>
+    <script>window._$ = jQuery.noConflict(true);</script>
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
+      <span>lame test markup</span>
+      <span>normal test markup</span>
+      <span>awesome test markup</span>
+    </div>
+  </body>
+</html>

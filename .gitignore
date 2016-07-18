@@ -1,0 +1,10 @@
+/node_modules/
+/bower_components/
+dist
+.grunt
+.npm
+node_modules
+jspm_packages
+logs
+tmp
+npm-debug.log*

@@ -1,0 +1,52 @@
+.jq-bubble {
+  position: absolute;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+  box-sizing: border-box;
+
+  .content {
+    padding: 10px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: -5px;
+    bottom: auto;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background-color: #fff;
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    content: '';
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 15px;
+      transform: rotate(45deg) translate(-10px, -15px);
+      transform-origin: top left;
+    }
+  }
+
+  &.top .arrow {
+    top: calc(100% - 5px);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-left-color: rgba(0, 0, 0, 0.2);
+  }
+}
