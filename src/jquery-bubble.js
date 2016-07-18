@@ -100,7 +100,7 @@
     $(window).resize(adjust);
   }
 
-  $.fn.jqueryBubble = function () {
+  $.fn.jqBubble = function () {
     $(this).on('mouseenter', '[rel~=popover]', e => {
       const $target = $(e.target).closest('[rel~=popover]');
       const timer = setTimeout(() => render(this, $target), DELAY);

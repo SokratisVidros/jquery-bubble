@@ -1,7 +1,6 @@
-# jquery-bubble
+# jquery-bubble (WIP)
 
-> Agile popovers that fit everywhere.
-
+> Agile popover that fits everywhere.
 
 ## Getting Started
 
@@ -16,12 +15,11 @@ In your web page:
 <script src="jquery.js"></script>
 <script src="dist/jquery-bubble.min.js"></script>
 <script>
-  jQuery(function ($) {
-    $.awesome(); // "awesome"
+  $(function ($) {
+    $(document.body).jqBubble();
   });
 </script>
 ```
-
 
 ## License
 
